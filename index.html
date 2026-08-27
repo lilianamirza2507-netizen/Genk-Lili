@@ -27,7 +27,22 @@
 
     position: relative;
 }
-
+#welcome {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #222;
+            color: white;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
 }
 
         header {
@@ -143,6 +158,8 @@
 </head>
 
 <body>
+    <button onclick="mulai()">▶️ Masuk Website</button>
+    </div>
 
     <header>
         <h1>🔥 GENG Lili 🔥</h1>
@@ -324,13 +341,16 @@
                 <p><b>Cita-cita:</b> Mengejar Kebahagiaan Abadi</p>
             </div>
             
-            <audio autoplay loop>
+            <audio controls autoplay loop>
         <source src="O_AJA_YA_KAN.mp3" type ="audio/mpeg">
         Browser Anda Tidak Mendukung Audio.
         </audio>
-            <button onclick="document.getElementById('musik').play()">
-                ▶️ Play Musik
-            </button>
+        <script>
+        function mulai() {
+            document.getElementById("musik").play();
+            document.getElementById("welcome").style.display = "none";
+        }
+    </script>
         </div>
 
     </section>
