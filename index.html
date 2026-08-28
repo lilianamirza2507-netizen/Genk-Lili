@@ -61,8 +61,8 @@
 
 .galeri {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     max-width: 1000px;
     margin: auto;
 }
@@ -98,6 +98,9 @@
     .galeri { 
         grid-template-columns: repeat(2, 1fr); 
     } 
+    .foto img {
+        height:250px;
+    }
 }
         header {
             background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -202,8 +205,16 @@
         }
         
         .Dokumentasi {
+            display:inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius:8px;
+            font-weight:bold;
             background: #eaf1ff;
             text-align: center;
+        }
+        .menu-dokumentasi:hover;
+        background : #ddd;
         }
         footer {
             background: Blue;
@@ -425,7 +436,7 @@ function toggleMusik() {
             
         </div>
         
-        <section class="Dokumentasi" >
+        <section class="Dokumentasi">
     <h2>📸 Dokumentasi Kegiatan</h2>
     <p>Berikut beberapa dokumentasi kegiatan kami.</p>
 <div class="galeri">
