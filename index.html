@@ -173,17 +173,13 @@
         <a href="#kontak">Kontak</a>
     </nav>
     
-<button onclick="mulai()">▶️ </button>
-    <audio controls autoplay loop>
+    <audio id="musik" autoplay loop playsinline>
         <source src="O_AJA_YA_KAN.mp3" type ="audio/mpeg">
         Browser Anda Tidak Mendukung Audio.
         </audio>
-        <script>
-        function mulai() {
-            document.getElementById("musik").play();
-            document.getElementById("welcome").style.display = "none";
-        }
-    </script>
+    <button onclick="document.getElementById('musik').play()">
+        ▶️
+    </button>
     
     <section id="home">
         <h2>Selamat Datang!</h2>
@@ -353,16 +349,6 @@
                 <p><b>Cita-cita:</b> Mengejar Kebahagiaan Abadi</p>
             </div>
             
-            <audio controls autoplay loop>
-        <source src="O_AJA_YA_KAN.mp3" type ="audio/mpeg">
-        Browser Anda Tidak Mendukung Audio.
-        </audio>
-        <script>
-        function mulai() {
-            document.getElementById("musik").play();
-            document.getElementById("welcome").style.display = "none";
-        }
-    </script>
         </div>
 
     </section>
