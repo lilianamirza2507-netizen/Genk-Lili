@@ -45,6 +45,60 @@
         }
 
 }
+/* DOKUMENTASI KEGIATAN */
+.dokumentasi {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.dokumentasi h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.dokumentasi p {
+    margin-bottom: 25px;
+}
+
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.foto {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.foto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.foto p {
+    margin: 0;
+    padding: 12px;
+    color: #222;
+    font-weight: bold;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+
+    .foto img {
+        height: 250px;
+    }
+}
 
         header {
             background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -156,59 +210,6 @@
         }
         
     </style>
-/* DOKUMENTASI KEGIATAN */
-.dokumentasi {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.dokumentasi h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.dokumentasi p {
-    margin-bottom: 25px;
-}
-
-.galeri {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.foto {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.foto img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-
-.foto p {
-    margin: 0;
-    padding: 12px;
-    color: #222;
-    font-weight: bold;
-}
-
-/* Tampilan HP */
-@media (max-width: 600px) {
-    .galeri {
-        grid-template-columns: 1fr;
-    }
-
-    .foto img {
-        height: 250px;
-    }
 </head>
 
 <body>
